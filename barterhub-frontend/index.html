@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Barter Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bh-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html"><span class="brand-dot"><i class="bi bi-arrow-left-right"></i></span>Barter Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="browse.html">Browse items</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <a class="btn btn-outline-primary" href="auth/login.html">Login</a>
+        <a class="btn btn-primary" href="auth/register.html">Register</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container text-center">
+    <h1 class="display-5">Swap what you do not need.<br>Get what you do.</h1>
+    <p class="lead mb-4">A free place to exchange unused items with other people. No buying. No selling.</p>
+    <form class="search-box d-flex mx-auto" action="browse.html" method="get">
+      <input class="form-control form-control-lg" name="q" placeholder="Search items, e.g. books, table, speaker">
+      <button class="btn btn-warning btn-lg px-4" type="submit"><i class="bi bi-search"></i></button>
+    </form>
+    <div class="mt-4"><a class="btn btn-light me-2" href="auth/register.html">Start swapping</a><a class="btn btn-outline-light" href="browse.html">Browse items</a></div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="h4 fw-bold mb-3">Browse by category</h2>
+  <div class="row g-3"><div class="col-6 col-md-3"><a class="cat-tile" href="browse.html?cat=Books"><i class="bi bi-book"></i><div class="mt-2 fw-semibold">Books</div></a></div><div class="col-6 col-md-3"><a class="cat-tile" href="browse.html?cat=Electronics"><i class="bi bi-laptop"></i><div class="mt-2 fw-semibold">Electronics</div></a></div><div class="col-6 col-md-3"><a class="cat-tile" href="browse.html?cat=Furniture"><i class="bi bi-lamp"></i><div class="mt-2 fw-semibold">Furniture</div></a></div><div class="col-6 col-md-3"><a class="cat-tile" href="browse.html?cat=Clothing"><i class="bi bi-handbag"></i><div class="mt-2 fw-semibold">Clothing</div></a></div><div class="col-6 col-md-3"><a class="cat-tile" href="browse.html?cat=Sports"><i class="bi bi-trophy"></i><div class="mt-2 fw-semibold">Sports</div></a></div><div class="col-6 col-md-3"><a class="cat-tile" href="browse.html?cat=Kitchen"><i class="bi bi-cup-hot"></i><div class="mt-2 fw-semibold">Kitchen</div></a></div><div class="col-6 col-md-3"><a class="cat-tile" href="browse.html?cat=Toys"><i class="bi bi-controller"></i><div class="mt-2 fw-semibold">Toys</div></a></div><div class="col-6 col-md-3"><a class="cat-tile" href="browse.html?cat=Mobiles"><i class="bi bi-phone"></i><div class="mt-2 fw-semibold">Mobiles</div></a></div></div>
+</section>
+
+<section class="container pb-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="h4 fw-bold mb-0">Latest items</h2><a href="browse.html">See all <i class="bi bi-arrow-right"></i></a>
+  </div>
+  <div class="row g-4">
+      <div class="col-sm-6 col-lg-4 item-col" data-title="Urdu &amp; English Novels (10 books)" data-cat="Books" data-cond="Good" data-city="Lahore" data-wants="A study table or a small bookshelf">
+        <div class="card item-card h-100 shadow-sm">
+          <div class="item-thumb cat-books"><i class="bi bi-book"></i></div>
+          <div class="card-body">
+            <span class="badge text-bg-light border">Books</span> <span class="badge text-bg-light border">Good</span>
+            <h6 class="card-title mt-2 mb-1">Urdu &amp; English Novels (10 books)</h6>
+            <p class="small text-muted mb-2"><i class="bi bi-geo-alt"></i> Lahore &nbsp;<i class="bi bi-person"></i> Ali Raza</p>
+            <div class="swap-box small"><i class="bi bi-arrow-left-right"></i> Wants: <strong>A study table or a small bookshelf</strong></div>
+          </div>
+          <div class="card-footer bg-white border-0"><a class="btn btn-outline-primary btn-sm w-100" href="item.html?id=1">View details</a></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 item-col" data-title="Wooden Study Table" data-cat="Furniture" data-cond="Good" data-city="Faisalabad" data-wants="Novels or school / college textbooks">
+        <div class="card item-card h-100 shadow-sm">
+          <div class="item-thumb cat-furniture"><i class="bi bi-lamp"></i></div>
+          <div class="card-body">
+            <span class="badge text-bg-light border">Furniture</span> <span class="badge text-bg-light border">Good</span>
+            <h6 class="card-title mt-2 mb-1">Wooden Study Table</h6>
+            <p class="small text-muted mb-2"><i class="bi bi-geo-alt"></i> Faisalabad &nbsp;<i class="bi bi-person"></i> Sara Khan</p>
+            <div class="swap-box small"><i class="bi bi-arrow-left-right"></i> Wants: <strong>Novels or school / college textbooks</strong></div>
+          </div>
+          <div class="card-footer bg-white border-0"><a class="btn btn-outline-primary btn-sm w-100" href="item.html?id=2">View details</a></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 item-col" data-title="Samsung Galaxy A12 (64 GB)" data-cat="Mobiles" data-cond="Fair" data-city="Multan" data-wants="A tablet or a smart watch">
+        <div class="card item-card h-100 shadow-sm">
+          <div class="item-thumb cat-mobiles"><i class="bi bi-phone"></i></div>
+          <div class="card-body">
+            <span class="badge text-bg-light border">Mobiles</span> <span class="badge text-bg-light border">Fair</span>
+            <h6 class="card-title mt-2 mb-1">Samsung Galaxy A12 (64 GB)</h6>
+            <p class="small text-muted mb-2"><i class="bi bi-geo-alt"></i> Multan &nbsp;<i class="bi bi-person"></i> Hamza Ali</p>
+            <div class="swap-box small"><i class="bi bi-arrow-left-right"></i> Wants: <strong>A tablet or a smart watch</strong></div>
+          </div>
+          <div class="card-footer bg-white border-0"><a class="btn btn-outline-primary btn-sm w-100" href="item.html?id=3">View details</a></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 item-col" data-title="Electric Kettle 1.7 L" data-cat="Kitchen" data-cond="New" data-city="Karachi" data-wants="A blender or a toaster">
+        <div class="card item-card h-100 shadow-sm">
+          <div class="item-thumb cat-kitchen"><i class="bi bi-cup-hot"></i></div>
+          <div class="card-body">
+            <span class="badge text-bg-light border">Kitchen</span> <span class="badge text-bg-light border">New</span>
+            <h6 class="card-title mt-2 mb-1">Electric Kettle 1.7 L</h6>
+            <p class="small text-muted mb-2"><i class="bi bi-geo-alt"></i> Karachi &nbsp;<i class="bi bi-person"></i> Ayesha Noor</p>
+            <div class="swap-box small"><i class="bi bi-arrow-left-right"></i> Wants: <strong>A blender or a toaster</strong></div>
+          </div>
+          <div class="card-footer bg-white border-0"><a class="btn btn-outline-primary btn-sm w-100" href="item.html?id=5">View details</a></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 item-col" data-title="Building Blocks Set (200 pcs)" data-cat="Toys" data-cond="Good" data-city="Islamabad" data-wants="Children story books">
+        <div class="card item-card h-100 shadow-sm">
+          <div class="item-thumb cat-toys"><i class="bi bi-controller"></i></div>
+          <div class="card-body">
+            <span class="badge text-bg-light border">Toys</span> <span class="badge text-bg-light border">Good</span>
+            <h6 class="card-title mt-2 mb-1">Building Blocks Set (200 pcs)</h6>
+            <p class="small text-muted mb-2"><i class="bi bi-geo-alt"></i> Islamabad &nbsp;<i class="bi bi-person"></i> Zara Malik</p>
+            <div class="swap-box small"><i class="bi bi-arrow-left-right"></i> Wants: <strong>Children story books</strong></div>
+          </div>
+          <div class="card-footer bg-white border-0"><a class="btn btn-outline-primary btn-sm w-100" href="item.html?id=6">View details</a></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 item-col" data-title="Winter Jacket (Size M)" data-cat="Clothing" data-cond="Like New" data-city="Rawalpindi" data-wants="Sports shoes, size 9">
+        <div class="card item-card h-100 shadow-sm">
+          <div class="item-thumb cat-clothing"><i class="bi bi-handbag"></i></div>
+          <div class="card-body">
+            <span class="badge text-bg-light border">Clothing</span> <span class="badge text-bg-light border">Like New</span>
+            <h6 class="card-title mt-2 mb-1">Winter Jacket (Size M)</h6>
+            <p class="small text-muted mb-2"><i class="bi bi-geo-alt"></i> Rawalpindi &nbsp;<i class="bi bi-person"></i> Usman Tariq</p>
+            <div class="swap-box small"><i class="bi bi-arrow-left-right"></i> Wants: <strong>Sports shoes, size 9</strong></div>
+          </div>
+          <div class="card-footer bg-white border-0"><a class="btn btn-outline-primary btn-sm w-100" href="item.html?id=7">View details</a></div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="h4 fw-bold text-center mb-4">How Barter Hub works</h2>
+  <div class="row g-4 text-center">
+    <div class="col-md-3"><div class="step-circle mb-2"><i class="bi bi-person-plus"></i></div><h6>1. Register and log in</h6><p class="small text-muted">Anyone can look around. Log in to post and swap.</p></div>
+    <div class="col-md-3"><div class="step-circle mb-2"><i class="bi bi-plus-square"></i></div><h6>2. Add your item</h6><p class="small text-muted">Pick a category, add photos, and say what you want in return.</p></div>
+    <div class="col-md-3"><div class="step-circle mb-2"><i class="bi bi-stars"></i></div><h6>3. Get matches</h6><p class="small text-muted">We suggest people who have what you want and want what you have.</p></div>
+    <div class="col-md-3"><div class="step-circle mb-2"><i class="bi bi-chat-dots"></i></div><h6>4. Chat and swap</h6><p class="small text-muted">Send a request, chat, complete the swap and rate each other.</p></div>
+  </div>
+</section>
+<footer class="bh-footer mt-5 py-4">
+  <div class="container d-flex flex-wrap justify-content-between gap-2 small">
+    <div><strong class="text-white">Barter Hub</strong> - exchange what you do not need for what you do. No buying, no selling.</div>
+    <div class="d-flex gap-3">
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
